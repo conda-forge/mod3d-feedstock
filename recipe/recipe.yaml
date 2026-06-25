@@ -34,6 +34,7 @@ requirements:
   host:
     - python
     - pybind11
+    - pybind11-stubgen
     - occt
   run:
     - python
