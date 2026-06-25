@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
 
 context:
-  version: "0.2.3"
+  version: "0.2.4"
 
 package:
   name: mod3d
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/ssg-aero/Mod3D/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 3f2fba325de16a0284d65122bc7d08928ba9394d29c006f37ae1aa123d742c08
+  sha256: 162e6f77215826e6b22c1b3b864ac35fd46250af9c3e0d4585ea790208fb0b59
 
 build:
   number: 0
