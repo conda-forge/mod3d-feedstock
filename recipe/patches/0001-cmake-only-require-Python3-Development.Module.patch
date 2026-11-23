@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -18,7 +18,7 @@
+ message("  -> includes: " ${CMAKE_INSTALL_INCLUDEDIR})
+ 
+ 
+-find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
++find_package(Python3 COMPONENTS Interpreter Development.Module REQUIRED)
+ find_package(OpenCASCADE REQUIRED COMPONENTS
+     FoundationClasses
+     ModelingData
