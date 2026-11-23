@@ -10,9 +10,11 @@ package:
 source:
   url: https://github.com/ssg-aero/Mod3D/archive/refs/tags/v${{ version }}.tar.gz
   sha256: 162e6f77215826e6b22c1b3b864ac35fd46250af9c3e0d4585ea790208fb0b59
+  patches:
+    - patches/0001-cmake-only-require-Python3-Development.Module.patch
 
 build:
-  number: 2
+  number: 3
   script:
     - if: unix
       then:
@@ -36,6 +38,7 @@ requirements:
     - pybind11
     - pybind11-stubgen
     - occt
+    - eigen
   run:
     - python
     - numpy
